@@ -1,0 +1,2 @@
+function showMessage(){alert('Привет! Спасибо за интерес к моему проекту!')}
+document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();alert('Сообщение отправлено!');this.reset()})
