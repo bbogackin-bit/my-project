@@ -1,41 +1,92 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой проект</title>
+    <title>БордКод — Безопасность на сноуборде</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <h1>Мой Проект</h1>
+            <h1>🏂 БордКод</h1>
             <ul>
                 <li><a href="#home">Главная</a></li>
                 <li><a href="#about">О проекте</a></li>
+                <li><a href="#rules">Правила</a></li>
+                <li><a href="#gear">Снаряжение</a></li>
                 <li><a href="#contact">Контакты</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Главный экран -->
     <section id="home" class="hero">
-        <h2>Добро пожаловать!</h2>
-        <p>Это мой индивидуальный проект</p>
-        <button onclick="showMessage()">Узнать больше</button>
+        <h2>БордКод</h2>
+        <p>Безопасность на сноуборде — это не удача, а результат осознанного подхода</p>
+        <button onclick="scrollToSection('about')">Узнать больше</button>
     </section>
+
+    <!-- О проекте -->
     <section id="about">
         <h2>О проекте</h2>
-        <p>Описание проекта...</p>
+        <p><strong>Актуальность:</strong> Проблема несоблюдения правил безопасности при катании на сноуборде в горах — одна из самых острых в сфере зимних видов спорта. Риск травмы у сноубордистов в 1,5–2 раза выше, чем у горнолыжников.</p>
+        <p><strong>Цель:</strong> Создать видеоролик "БордКод" для обучения правилам безопасности.</p>
+        <p><strong>Задачи:</strong></p>
+        <ul>
+            <li>Изучить правила безопасности на склонах</li>
+            <li>Проанализировать частые ошибки райдеров</li>
+            <li>Разработать памятку для начинающих</li>
+            <li>Создать информационный видеоролик</li>
+        </ul>
+        <p><strong>Выполнил:</strong> Богачкин Богдан, 10А класс</p>
+        <p><strong>Руководитель:</strong> Медведьев А.А.</p>
     </section>
+
+    <!-- Правила FIS -->
+    <section id="rules">
+        <h2>Правила безопасности (FIS)</h2>
+        <div class="cards">
+            <div class="card"><span class="num">1</span> Уважай других — не создавай опасных ситуаций</div>
+            <div class="card"><span class="num">2</span> Контролируй скорость и траекторию</div>
+            <div class="card"><span class="num">3</span> Уступай дорогу тому, кто ниже по склону</div>
+            <div class="card"><span class="num">4</span> Обгоняй осторожно, оставляя место для манёвра</div>
+            <div class="card"><span class="num">5</span> Останавливайся только у края трассы</div>
+            <div class="card"><span class="num">6</span> Не выезжай за пределы размеченных трасс</div>
+            <div class="card"><span class="num">7</span> Соблюдай знаки и разметку</div>
+            <div class="card"><span class="num">8</span> Окажи помощь пострадавшему</div>
+        </div>
+    </section>
+
+    <!-- Снаряжение -->
+    <section id="gear">
+        <h2>Снаряжение и защита</h2>
+        <div class="cards">
+            <div class="card">⛑️ Шлем — снижает риск черепно-мозговых травм</div>
+            <div class="card">🛡️ Защита запястий — самая частая травма у новичков</div>
+            <div class="card">🦺 Защита спины и копчика</div>
+            <div class="card">🥽 Маска-очки — защита от ветра, снега и УФ-лучей</div>
+            <div class="card">👢 Правильные ботинки и крепления</div>
+            <div class="card">📱 Заряженный телефон с номером 112</div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
     <section id="contact">
         <h2>Контакты</h2>
+        <p>Есть вопросы по безопасности? Напиши!</p>
         <form id="contactForm">
-            <input type="text" placeholder="Имя">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Сообщение"></textarea>
+            <input type="text" placeholder="Имя" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Сообщение" rows="4"></textarea>
             <button type="submit">Отправить</button>
         </form>
     </section>
-    <footer><p>© 2026 Мой проект</p></footer>
+
+    <footer>
+        <p>© 2026 БордКод. Индивидуальный проект. Все права защищены.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
